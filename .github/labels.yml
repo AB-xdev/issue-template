@@ -33,6 +33,3 @@
 - name: waiting-for-response
   description: If no response is received after a certain time the issue will be closed
   color: '#202020'
-
-## TEST
-
