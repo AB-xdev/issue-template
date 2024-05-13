@@ -1,7 +1,4 @@
 contact_links:
-  - name: ❓ Question
-    url: https://github.com/xdev-software/template-placeholder/discussions/new?category=questions
-    about: Ask a question
   - name: 💬 Contact support
     url: https://xdev.software/en/services/support
     about: "If you need support as soon as possible and you can't wait for any pull request, feel free to use our support"
