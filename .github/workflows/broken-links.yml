@@ -27,7 +27,7 @@ jobs:
           
       - name: Close issue if everything is fine
         if: steps.find-issue.outputs.number != ''
-        run: echo "Outputs issue_number is ${{ steps.find-issue.outputs.number }}"
+        run: gh issue close -r 'not planned' ${{ steps.find-issue.outputs.number }}
 
       # - name: Create Issue From File
       #  if: env.lychee_exit_code != 0
