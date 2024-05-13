@@ -35,8 +35,7 @@ body:
         If you can't cause the bug to show up again reliably (and hence don't have a proper set of steps to give us), please still try to give as many details as possible on how you think you encountered the bug.
       placeholder: |
         1. Use '...'
-        2. Do '....'
-        3. Bug occurs
+        2. Do '...'
     validations:
       required: true
 
