@@ -2,6 +2,13 @@ name: 🐞 Bug
 description: Create a bug report for something that is broken
 labels: [bug]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for reporting a bug.
+
+        Please fill in as much information as possible about your bug so that we don't have to play "information ping-pong" and can help you immediately.
+
   - type: checkboxes
     id: checklist
     attributes:
