@@ -20,9 +20,9 @@ body:
           required: true
 
   - type: textarea
-    id: feature-description
+    id: description
     attributes:
-      label: Feature description
+      label: Description
     validations:
       required: true
 
