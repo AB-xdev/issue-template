@@ -26,13 +26,14 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           
       - name: Close issue if everything is fine
-        if: steps.find-issue.outputs.number != ''
+        if: env.lychee_exit_code == 0 && steps.find-issue.outputs.number != ''
         run: gh issue close -r 'not planned' ${{ steps.find-issue.outputs.number }}
 
-      # - name: Create Issue From File
-      #  if: env.lychee_exit_code != 0
-      #  uses: peter-evans/create-issue-from-file@v5
-      #  with:
-      #    title: Link Checker Report
-      #    content-filepath: ./lychee/out.md
-      #    labels: bug, automated
+      - name: Create Issue From File
+        if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          issue-number: ${{ steps.find-issue.outputs.number }}
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: bug, automated
