@@ -1,3 +1,3 @@
 # issue-template
 
-https://xdev.software/abc
+https://xdev.software/
