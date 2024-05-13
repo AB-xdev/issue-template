@@ -1,3 +1,4 @@
+labels: [question]
 body:
   - type: markdown
     attributes:
@@ -25,4 +26,4 @@ body:
     id: additional-information
     attributes:
       label: Additional information
-      description: Any other information you'd like to include, for instance sketches, mockups, pictures of cats, etc.
+      description: "Any other information you'd like to include - for instance logs, screenshots, etc."
