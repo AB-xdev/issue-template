@@ -21,7 +21,7 @@ jobs:
       - name: Find already existing issue
         id: find-issue
         run: |
-          gh issue list -l "bug" -l "automated" -L 1 -S "in:title Link Checker Report" -s "open" --json "id"
+          gh issue list -l "bug" -l "automated" -L 1 -S "in:title Link Checker Report" -s "open" --json "number" --jq ".[]"
         env:
           GH_TOKEN: ${{ github.token }}
           
