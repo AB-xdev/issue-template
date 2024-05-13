@@ -1,5 +1,5 @@
-name: Bug
-description: 🐞 Create a bug report for something that is broken
+name: 🐞 Bug
+description: Create a bug report for something that is broken
 labels: [bug]
 body:
   - type: checkboxes
