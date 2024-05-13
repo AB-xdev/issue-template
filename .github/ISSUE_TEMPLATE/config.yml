@@ -4,4 +4,4 @@ contact_links:
     about: "If you need support as soon as possible and you can't wait for any pull request, feel free to use our support"
   - name: 🐱‍💻 Security vulnerability
     url: https://github.com/AB-xdev/issue-template-test/security/advisories/new
-    about: "Please report security vulnerabilities here"
+    about: "If you found a security vulnerabilities report it here"
