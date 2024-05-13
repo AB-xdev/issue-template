@@ -65,7 +65,4 @@ body:
     attributes:
       label: Additional information
       description: |
-        Any other information you'd like to include, for instance 
-        * logs
-        * information about the used environment (e.g. OS version)
-        * ...
+        Any other relevant information you'd like to include
