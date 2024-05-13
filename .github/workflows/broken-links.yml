@@ -22,6 +22,8 @@ jobs:
         id: find-issue
         run: |
           gh issue list -l "bug" -l "automated" -L 1 -S "in:title Link Checker Report" -s "open"
+        env:
+          GH_TOKEN: ${{ github.token }}
           
       - name: Close issue if everything is fine
         # if: env.lychee_exit_code == 0
