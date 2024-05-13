@@ -28,6 +28,8 @@ jobs:
       - name: Close issue if everything is fine
         if: env.lychee_exit_code == 0 && steps.find-issue.outputs.number != ''
         run: gh issue close -r 'not planned' ${{ steps.find-issue.outputs.number }}
+        env:
+          GH_TOKEN: ${{ github.token }}
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
