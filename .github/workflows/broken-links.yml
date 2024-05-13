@@ -5,8 +5,11 @@ on:
   schedule:
     - cron: "23 23 * * *"
 
+permissions:
+  issues: write
+
 jobs:
-  linkChecker:
+  link-checker:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
