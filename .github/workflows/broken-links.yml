@@ -18,6 +18,20 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1
 
+      - name: Find already existing issue
+        id: find-issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: find-issues
+          issue-creator: github-actions
+          issue-state: open
+          title-includes: Link Checker Report
+          labels: bug, automated
+
+      - name: Close issue if everything is fine
+        # if: env.lychee_exit_code == 0
+        run: echo "Outputs issue_number is ${{ steps.find-issue.outputs.issues }}"
+
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
         uses: peter-evans/create-issue-from-file@v5
