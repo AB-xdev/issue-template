@@ -3,5 +3,5 @@ contact_links:
     url: https://xdev.software/en/services/support
     about: "If you need support as soon as possible and you can't wait for any pull request, feel free to use our support"
   - name: 🐱‍💻 Security vulnerability
-    url: https://github.com/AB-xdev/issue-template-test/security/advisories/new
+    url: https://github.com/xdev-software/template-placeholder/security/advisories/new
     about: "If you found a security vulnerabilities report it here"
